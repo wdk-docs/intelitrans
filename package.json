@@ -30,12 +30,12 @@
       "type": "object",
       "title": "youdao configuration",
       "properties": {
-        "youdao.appKey": {
+        "translate.youdao.appKey": {
           "type": "string",
           "default": "",
           "description": "有道翻译应用ID"
         },
-        "youdao.appSecret": {
+        "translate.youdao.appSecret": {
           "type": "string",
           "default": "",
           "description": "有道翻译应用密钥"
@@ -71,6 +71,7 @@
     "webpack-cli": "^5.1.1"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "event-stream": "^4.0.1"
   }
 }
