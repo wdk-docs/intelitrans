@@ -6,8 +6,6 @@ vscode 翻译插件，第一版使用有道翻译
 
 划词后，安 `cmd+'` 翻译并替换
 
-\!\[feature X\]\(images/feature-x.png\)
-
 > Tip: 划词翻译
 
 ## 需求
@@ -26,3 +24,8 @@ vscode 翻译插件，第一版使用有道翻译
 ### 1.0.0
 
 完成初步设计
+
+## 参考
+
+- 有道翻译 [JavaHello/vscode-translate](https://github.com/JavaHello/vscode-**translate**)
+- 划词替换 [jianzhichun/vscode-translate](https://github.com/jianzhichun/vscode-translate)
