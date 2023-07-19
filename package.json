@@ -1,14 +1,16 @@
 {
-  "name": "vscode-extension",
-  "displayName": "vscode-extension",
-  "description": "",
-  "version": "0.0.1",
+  "name": "vscode-translate",
+  "displayName": "有道翻译",
+  "description": "vscode有道翻译插件",
+  "version": "1.0.1",
+  "repository": "https://github.com/wdk-docs/vscode-translate",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
@@ -21,8 +23,8 @@
     "keybindings": [
       {
         "command": "extension.youdao",
-        "key": "Ctrl+6",
-        "mac": "Cmd+1",
+        "key": "Ctrl+'",
+        "mac": "Cmd+'",
         "when": "editorTextFocus"
       }
     ],
@@ -44,13 +46,13 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run package",
+    "vscode:prepublish": "npm run package",
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
-    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
@@ -66,6 +68,7 @@
     "eslint": "^8.41.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
+    "prettier": "^3.0.0",
     "ts-loader": "^9.4.3",
     "typescript": "^5.1.3",
     "webpack": "^5.85.0",

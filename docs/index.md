@@ -16,4 +16,10 @@ editor.edit((edit: any) => edit.replace(selection, translateResult[0]));
 
 ## 如何打包
 
+> 使用npm重新安装包，package.json里pnpm改为npm，否则报错
+
+```sh
+vsce package
+```
+
 ## 如何编译
