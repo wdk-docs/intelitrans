@@ -2,7 +2,7 @@
 
 import * as vscode from "vscode";
 import * as crypto from "crypto";
-// import * as querystring from "querystring";
+import * as Qs from "qs";
 import axios from "axios";
 
 class TextFilter {
@@ -98,12 +98,17 @@ export class Translate {
   }
 
   async fy(q: string) {
-    Translate.ReqData.q = TextFilter.filter(q);
+    Translate.ReqData.q = q; //TextFilter.filter(q);
     Translate.ReqData.salt = this.guid();
     Translate.ReqData.appKey = this.appKey;
     this.sign(Translate.ReqData, this.appSecret);
     try {
-      let res = await axios.get(Translate.API_URL, { params: Translate.ReqData });
+      let res = await axios.get(Translate.API_URL, {
+        params: Translate.ReqData,
+        paramsSerializer: function (params) {
+          return Qs.stringify(params);
+        },
+      });
       let { data, status, statusText, headers } = res;
       if (data.errorCode !== "0") {
         let msg = Translate.ErrorCode[data.errorCode];

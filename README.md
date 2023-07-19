@@ -29,3 +29,6 @@ vscode 翻译插件，第一版使用有道翻译
 
 - 有道翻译 [JavaHello/vscode-translate](https://github.com/JavaHello/vscode-**translate**)
 - 划词替换 [jianzhichun/vscode-translate](https://github.com/jianzhichun/vscode-translate)
+- 有道开发平台
+  - 控制台：用于获取应用 ID 和密钥 https://ai.youdao.com/console
+  - 文档：https://ai.youdao.com/DOCSIRMA/html/trans/api/wbfy/index.html
