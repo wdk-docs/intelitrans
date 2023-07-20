@@ -1,9 +1,10 @@
 {
-  "name": "vscode-translate",
-  "displayName": "有道翻译",
-  "description": "vscode有道翻译插件",
+  "name": "intelitrans",
+  "displayName": "智译",
+  "description": "vscode 翻译插件",
   "version": "1.0.1",
   "repository": "https://github.com/wdk-docs/vscode-translate",
+  "publisher": "wohugb",
   "engines": {
     "vscode": "^1.80.0"
   },
