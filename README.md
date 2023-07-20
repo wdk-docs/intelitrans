@@ -1,4 +1,4 @@
-# vscode-translate
+# 智译
 
 vscode 翻译插件，第一版使用有道翻译
 
