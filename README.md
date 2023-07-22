@@ -4,9 +4,9 @@ vscode 翻译插件，第一版使用有道翻译
 
 ## 翻译
 
-划词后，安 `cmd+'` 翻译并替换
+划词后，安 mac 按 `command+'` 翻译并替换,windows 按 `Ctrl+'`
 
-> Tip: 划词翻译
+> 提示: 在vscode菜单第一项点击 `首选项` -> `键盘快捷方式` -> 搜索框搜索 `@ext:wohugb.intelitrans`, 可以自定义快捷键
 
 ## 需求
 
@@ -14,8 +14,12 @@ vscode 翻译插件，第一版使用有道翻译
 
 ## 设置
 
+在扩展页面点击管理 齿轮 `⚙`,或者在菜单第一项点击 `首选项` -> `设置` -> 搜索框搜索 `@ext:wohugb.intelitrans`,然后设置以下选项
+
 - `translate.youdao.appSecret`: 有道翻译应用 ID
 - `translate.youdao.appKey`: 有道翻译应用密钥
+
+以上选项值在 `有道智云·AI开放平台` 创建并获取: https://ai.youdao.com/console
 
 ## 已知的问题
 
