@@ -1,9 +1,22 @@
-# Change Log
-
-All notable changes to the "vscode-extension" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+# 更改日志
 
 ## [Unreleased]
 
-- Initial release
+- [1.1.1] - 优化markdown支持
+
+## [1.0.1] - 2023-07-20
+
+### Added
+
+- 划词替换
+- 划词输出
+
+### Fixed
+
+### Changed
+
+### Removed
+
+---
+
+查看[更新日志](http://keepachangelog.com/)获取关于如何构建该文件的建议。
