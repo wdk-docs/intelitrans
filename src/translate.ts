@@ -144,8 +144,12 @@ export class Translate {
       let selection = editor.selection;
       let content = editor.document.getText(selection);
       if (content) {
-        let translateResult = await this.fy(content);
-        editor.edit((edit: any) => edit.replace(selection, translateResult[0]));
+        let translateResults = await this.fy(content);
+        let translateResult = translateResults[0];
+        // 转义markdown里的 code inline `foo`
+        translateResult = translateResult.replace(/' (.*?) '/g, "`$1`");
+        translateResult = translateResult.replace(/“(.*?)”/g, "`$1`");
+        editor.edit((edit: any) => edit.replace(selection, translateResult));
       }
     } else {
       vscode.window.showErrorMessage("需要配置有道翻译 appKey 和 appSecret !");
