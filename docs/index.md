@@ -22,4 +22,28 @@ editor.edit((edit: any) => edit.replace(selection, translateResult[0]));
 vsce package
 ```
 
-## 如何编译
+## 发布
+
+```sh
+vsce publish
+```
+
+## token 过期更新
+
+```
+You're using an expired Personal Access Token, please get a new PAT.
+More info: https://aka.ms/vscodepat
+```
+
+按照指引新建token并复制
+
+```
+vsce login [publisher]
+
+Publisher '[publisher]' is already known
+Do you want to overwrite its PAT? [y/N] y
+https://marketplace.visualstudio.com/manage/publishers/
+Personal Access Token for publisher '[publisher]': ****************************************************
+
+The Personal Access Token verification succeeded for the publisher '[publisher]'.
+```

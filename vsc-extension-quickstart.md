@@ -11,7 +11,7 @@
 
 ## 设置
 
-- 安装推荐的扩展 (amodio.tsl-problem-matcher and dbaeumer.vscode-eslint)
+- 安装推荐的扩展 (amodio.tsl-problem-matcher 和 dbaeumer.vscode-eslint)
 
 ## 站起来，马上跑
 
