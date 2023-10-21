@@ -2,7 +2,7 @@
   "name": "intelitrans",
   "displayName": "智译",
   "description": "vscode 翻译插件",
-  "version": "1.1.1",
+  "version": "2.0.1",
   "repository": "https://github.com/wdk-docs/intelitrans",
   "publisher": "wohugb",
   "engines": {
@@ -17,13 +17,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.youdao",
-        "title": "youdao"
+        "command": "extension.intelitrans",
+        "title": "intelitrans"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.youdao",
+        "command": "extension.intelitrans",
         "key": "Ctrl+'",
         "mac": "Cmd+'",
         "when": "editorTextFocus"
@@ -31,14 +31,68 @@
     ],
     "configuration": {
       "type": "object",
-      "title": "youdao configuration",
+      "title": "智译",
       "properties": {
-        "translate.youdao.appKey": {
+        "intelitrans.api_platform": {
+          "type": "string",
+          "enum": [
+            "youdao",
+            "baidu"
+          ],
+          "markdownEnumDescriptions": [
+            "*有道翻译平台*",
+            "*百度翻译开放平台*"
+          ],
+          "default": "youdao",
+          "description": "选择翻译平台"
+        },
+        "intelitrans.baidu.domain": {
+          "type": "string",
+          "default": "it",
+          "enum": [
+            "it",
+            "finance",
+            "machinery",
+            "senimed",
+            "novel",
+            "academic",
+            "aerospace",
+            "wiki",
+            "news",
+            "law",
+            "contract"
+          ],
+          "markdownEnumDescriptions": [
+            "**信息技术领域**",
+            "**金融财经领域**",
+            "**机械制造领域**",
+            "**生物医药领域**",
+            "**网络文学领域**",
+            "**学术论文领域**",
+            "**航空航天领域**",
+            "**人文社科领域**",
+            "**新闻资讯领域**",
+            "**法律法规领域**",
+            "**合同领域**"
+          ],
+          "description": "百度翻译领域类型"
+        },
+        "intelitrans.baidu.appid": {
+          "type": "string",
+          "default": "",
+          "description": "百度翻译应用ID"
+        },
+        "intelitrans.baidu.appSecret": {
+          "type": "string",
+          "default": "",
+          "description": "百度翻译应用密钥"
+        },
+        "intelitrans.youdao.appKey": {
           "type": "string",
           "default": "",
           "description": "有道翻译应用ID"
         },
-        "translate.youdao.appSecret": {
+        "intelitrans.youdao.appSecret": {
           "type": "string",
           "default": "",
           "description": "有道翻译应用密钥"

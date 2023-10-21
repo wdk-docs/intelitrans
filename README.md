@@ -16,10 +16,16 @@ vscode 翻译插件，第一版使用有道翻译
 
 在扩展页面点击管理 齿轮 `⚙`,或者在菜单第一项点击 `首选项` -> `设置` -> 搜索框搜索 `@ext:wohugb.intelitrans`,然后设置以下选项
 
-- `translate.youdao.appSecret`: 有道翻译应用 ID
-- `translate.youdao.appKey`: 有道翻译应用密钥
+- `intelitrans.api_platform`: 应用平台，默认有道
+- `intelitrans.baidu.appSecret`: 百度翻译应用 ID
+- `intelitrans.baidu.appKey`: 百度翻译应用密钥
+- `intelitrans.youdao.appSecret`: 有道翻译应用 ID
+- `intelitrans.youdao.appKey`: 有道翻译应用密钥
 
-以上选项值在 `有道智云·AI开放平台` 创建并获取: https://ai.youdao.com/console
+以上选项值在如下创建并获取
+
+- `有道智云·AI开放平台` : https://ai.youdao.com/console
+- `百度·翻译开放平台`: http://api.fanyi.baidu.com/api/trans/product/desktop
 
 ## 关于输出
 
@@ -33,6 +39,10 @@ vscode 翻译插件，第一版使用有道翻译
 ## 已知的问题
 
 ## 发布说明
+
+### 2.0.1
+
+添加百度翻译支持
 
 ### 1.0.1
 

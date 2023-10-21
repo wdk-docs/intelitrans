@@ -7,9 +7,9 @@ import { Translate } from "./translate";
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   let out: vscode.OutputChannel;
-  let disposable = vscode.commands.registerCommand("extension.youdao", () => {
+  let disposable = vscode.commands.registerCommand("extension.intelitrans", () => {
     if (!out) {
-      out = vscode.window.createOutputChannel("有道翻译");
+      out = vscode.window.createOutputChannel("智译");
       out.show();
     }
     new Translate(out).translate();
