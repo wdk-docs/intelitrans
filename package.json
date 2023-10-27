@@ -2,7 +2,7 @@
   "name": "intelitrans",
   "displayName": "智译",
   "description": "vscode 翻译插件",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "repository": "https://github.com/wdk-docs/intelitrans",
   "publisher": "wohugb",
   "engines": {

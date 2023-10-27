@@ -1,5 +1,7 @@
 # 智译
 
+[![Visual Studio Marketplace Installs - Azure DevOps Extension](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/wohugb.intelitrans?label=%E5%AE%89%E8%A3%85)](https://marketplace.visualstudio.com/items?itemName=wohugb.intelitrans)
+
 vscode 翻译插件，第一版使用有道翻译
 
 ## 翻译
